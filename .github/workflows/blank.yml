@@ -28,6 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Docker Login
+        run: docker login -u nemdangocbich
+        env:
+            docker_id: nemdangocbich
+            docker_token: f9fdc672-5583-453e-bdca-ad708f3639d7
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
